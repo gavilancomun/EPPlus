@@ -2962,6 +2962,15 @@ namespace OfficeOpenXml
                         SaveTables();
                         SavePivotTables();
                     }
+                else
+                {
+                    // save the header & footer (if defined)
+                    if (_headerFooter != null)
+                    {
+                        HeaderFooter.Save();
+                        HeaderFooter.SaveHeaderFooterImages();
+                    }
+                }
                 }
 
                 if (Drawings.UriDrawing!=null)
