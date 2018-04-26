@@ -53,3 +53,10 @@ _ReSharper*/
 
 #NuGet
 packages/
+
+# Vim 
+*~
+*.swp
+#
+
+
